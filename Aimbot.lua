@@ -7,7 +7,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
   }
 
 
---// i think this was the function but i dont give a fuck \\--
+--// i think this was the local stuff but i dont give a fuck \\--
 local Camera = workspace.CurrentCamera
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -41,7 +41,7 @@ CircleBitch.Radius = _G.CircleRadius
 CircleBitch.Transparency = _G.CircleTransparency
 CircleBitch.NumSides = _G.CircleSides
 CircleBitch.Thickness = _G.CircleThickness
---// Aimbot Here Bitch \\--
+--// Aimbot Function Here Bitch \\--
 local function GetClosestPlayer()
 	local MaximumDistance = _G.CircleRadius
 	local Target = nil
