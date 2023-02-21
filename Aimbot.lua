@@ -7,7 +7,7 @@ local LocalPlayer = Players.LocalPlayer
 local Holding = false
 -- Main Setting
 _G.AimbotEnabled = true
-_G.TeamCheck = true --// If set to true then the script would only lock on your aim at enemy team members.
+_G.TeamCheck = false --// If set to true then the script would only lock on your aim at enemy team members.
 _G.AimPart = "Head" --// Where the aimbot script would lock on at.
 _G.Sensitivity = 0.5 --// How many seconds it takes for the aimbot script to officially lock onto the target's aimpart.
 
