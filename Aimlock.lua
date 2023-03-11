@@ -7,10 +7,6 @@ Options.Aimpart = "Head" --// Change To your liking, Options: "Head" "Neck" "Tor
 ]]--
 
 
---// Setting
-Options.Smoothness = true
-Options.Aimpart = "Head"
-
 --// Variable
 local UIS = game:GetService("UserInputService")
 local camera = game.Workspace.CurrentCamera
