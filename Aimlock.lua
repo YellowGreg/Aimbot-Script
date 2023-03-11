@@ -1,4 +1,6 @@
 --[[
+[Important]: You Will likely get ban or kick
+
 Use these this setting for your own hub
 
 Options.Smoothness = false
