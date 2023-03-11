@@ -1,20 +1,35 @@
+--[[
+Use these this setting for your own hub
+
+Options.Smoothness = false
+Options.Aimpart = "Head" --// Change To your liking, Options: "Head" "Neck" "Torso" 
+
+]]--
+
+
+--// Setting
+Options.Smoothness = true
+Options.Aimpart = "Head"
+
+--// Variable
 local UIS = game:GetService("UserInputService")
 local camera = game.Workspace.CurrentCamera
 
+--// Script i guess
 function getClosest()
-  local closestPlayer = nil
-  local closestDist = math.huge
+  local Player = nil
+  local CDist = math.huge
   
   for i,v in pairs(game.Players:GetPlayers()) do
     if v ~= game.Players.LocalPlayer and v.Team ~= game.Players.LocalPlayer.Team then
       local Dist = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.Character.HumanoidRootPart.Position).magnitude
-      if Dist < closestDist then
-        closestDist = Dist
-        closestPlayer = v
+      if Dist < CDist then
+        CDist = Dist
+        Player = v
       end
     end
   end
-  return closestPlayer
+  return Player
 end
 
 _G.aim = false
